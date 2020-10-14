@@ -18,7 +18,7 @@
   <script src="https://kit.fontawesome.com/867a2c068e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="contactUs.css">
-  <title>Astorian'z</title>
+  <title>Contact us</title>
 </head>
 
 <body>
@@ -147,176 +147,179 @@
     </div>
   </header>
 
-  <div style="padding-top: 200px;"></div>
-  <div class="containerContact">
-    <div class="row">
-      <div class="col-lg-5 leftDiv">
-        <h1 class="contactUsHeading">You can contact us on</h1>
-        <div class="info">
-          <i class="fas fa-map-marker-alt fa-2x" class="contactIcon"></i>
-          <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua</p> <br>
-        </div>
+  <div style="padding-top: 200px;">
+    <div>
+      <div class="containerContact">
+        <div class="row rowContact">
+          <div class="col-lg-5 leftDiv">
+            <h1 class="contactUsHeading">You can contact us on</h1>
+            <div class="info">
+              <i class="fas fa-map-marker-alt fa-2x" class="contactIcon"></i>
+              <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore magna aliqua</p> <br>
+            </div>
 
-        <br>
-        <i class="fas fa-phone-volume fa-2x" class="contactIcon"></i>
-        <p class="contact">+1-543-123-4567</p> <br>
+            <br>
+            <i class="fas fa-phone-volume fa-2x" class="contactIcon"></i>
+            <p class="contact">+1-543-123-4567</p> <br>
 
-        <br>
-        <i class="fas fa-envelope-open fa-2x" class="contactIcon"></i>
-        <p class="contact">example@Astorianz.com</p> <br>
-      </div>
-
-
-      <div class="col-lg-7 row rowContact">
-        <h1 class="contactUsHeading">Contact us using this form</h1>
-        <span>
-          <input class="basic-slide" value="" id="name" type="text" placeholder="Your best name" />
-          <label for="name">Name</label>
-        </span>
-
-        <span>
-          <input class="basic-slide" id="email" type="email" placeholder="Your favorite email" />
-          <label for="email">Email</label>
-        </span>
-
-        <span>
-          <input class="basic-slide" id="phone" type="text" placeholder="Your favorite number" />
-          <label for="phone">Phone</label>
-        </span>
-
-        <span>
-          <textarea class="basic-slide" id="message" placeholder="You precious message" rows="10" cols="10"></textarea>
-          <label for="message">Message</label>
-        </span>
-
-        <div class="button" id="button-7" onclick="validate()">
-          <div id="dub-arrow"> <i class="fab fa-telegram fa-3x"></i></div>
-          <a href="#">Send</a>
-        </div>
-
-        <div class="button" id="button-7" onclick="reset()">
-          <div id="dub-arrow"> <i class="fas fa-sync-alt fa-2x"></i></div>
-          <a href="#">Reset</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
+            <br>
+            <i class="fas fa-envelope-open fa-2x" class="contactIcon"></i>
+            <p class="contact">example@Astorianz.com</p> <br>
+          </div>
 
 
+          <div class="col-lg-7 row rowContact">
+            <h1 class="contactUsHeading">Contact us using this form</h1>
+            <span>
+              <input class="basic-slide" value="" id="name" type="text" placeholder="Your best name" />
+              <label for="name">Name</label>
+            </span>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class=" col-xs-6 col-md-3">
-          <h3 class="footer-title">Get To know Us</h3>
-          <ul class="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">CSR</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Our Ventures</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-xs-6">
+            <span>
+              <input class="basic-slide" id="email" type="email" placeholder="Your favorite email" />
+              <label for="email">Email</label>
+            </span>
 
-          <h3 class="footer-title">Contact with us</h3>
-          <ul class="footer-links">
-            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-          </ul>
+            <span>
+              <input class="basic-slide" id="phone" type="text" placeholder="Your favorite number" />
+              <label for="phone">Phone</label>
+            </span>
 
-        </div>
-        <div class="col-md-3 col-xs-6">
-          <h3 class="footer-title">Mail Us</h3>
-          <ul class="footer-links">
-            <li><a><i class="fa fa-map-marker"></i> New Delhi</a></li>
-            <li><a><i class="fa fa-phone"></i> +91 9876543210</a></li>
+            <span>
+              <textarea class="basic-slide" id="message" placeholder="You precious message" rows="10"
+                cols="10"></textarea>
+              <label for="message">Message</label>
+            </span>
 
-            <li><a href="#"><i class="fa fa-envelope-o"></i> astorianz.com</a></li>
-            <li><a href="WebsitePolicies.html"><i class="fa fa-pencil-square-o"></i> Privacy Policy </a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-xs-6">
-          <h3 class="footer-title">Service</h3>
-          <ul class="footer-links">
-            <li><a href="#">My Account</a></li>
+            <div class="buttons">
+              <!-- To open the website or tab once the button get clicked you can use written jquery -->
+              <div class="button" id="button-7" onclick="validate()">
+                <div id="dub-arrow"> <i class="fab fa-telegram fa-3x"></i></div>
+                <a href="#">Send</a>
+              </div>
 
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Track My Order</a></li>
-            <li><a href="help.html">Help</a></li>
-
-          </ul>
+              <div class="button resetButton" id="button-7" onclick="reset()">
+                <div id="dub-arrow"> <i class="fas fa-sync-alt fa-2x"></i></div>
+                <a href="#">Reset</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <a href="#navbar" id="top"><button id="top-button">Go to top</button></a>
-      </div>
-      <div class="row">
-        <p id="copyright">Astorian'z © 2020| Powered By Astorianz
-        <p>
-      </div>
-    </div>
-    <!-- container end -->
-  </footer>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class=" col-xs-6 col-md-3">
+              <h3 class="footer-title">Get To know Us</h3>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Ventures</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-xs-6">
+
+              <h3 class="footer-title">Contact with us</h3>
+              <ul class="footer-links">
+                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+              </ul>
+
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <h3 class="footer-title">Mail Us</h3>
+              <ul class="footer-links">
+                <li><a><i class="fa fa-map-marker"></i> New Delhi</a></li>
+                <li><a><i class="fa fa-phone"></i> +91 9876543210</a></li>
+
+                <li><a href="#"><i class="fa fa-envelope-o"></i> astorianz.com</a></li>
+                <li><a href="WebsitePolicies.html"><i class="fa fa-pencil-square-o"></i> Privacy Policy </a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-xs-6">
+              <h3 class="footer-title">Service</h3>
+              <ul class="footer-links">
+                <li><a href="#">My Account</a></li>
+
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="help.html">Help</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#navbar" id="top"><button id="top-button">Go to top</button></a>
+          </div>
+          <div class="row">
+            <p id="copyright">Astorian'z © 2020| Powered By Astorianz
+            <p>
+          </div>
+        </div>
+        <!-- container end -->
+      </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
-  <script type="text/javascript" src="./landing.js"></script>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
+      <script type="text/javascript" src="./landing.js"></script>
 
-  <!-- Email and phone number validation -->
-  <script type="text/javascript">
-    function validate() {
-      var userinput = $('#email').val();
-      var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-      var phoneUserinput = $('#phone').val();
-      var phonePattern = /^[\+]?[0-9]{10,14}$/;
+      <!-- Email and phone number validation -->
+      <script type="text/javascript">
+        function validate() {
+          var userinput = $('#email').val();
+          var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+          var phoneUserinput = $('#phone').val();
+          var phonePattern = /^[\+]?[0-9]{10,14}$/;
 
-      if (!pattern.test(userinput)) {
-        alert('Please enter a valid e-mail address!');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#email").offset().top - 200
-        }, 200);
-        $('#email').val("");
-        $('#email').focus();
-      } else if (!phonePattern.test(phoneUserinput)) {
-        alert('Please enter a valid phone number!');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#phone").offset().top - 200
-        }, 200);
-        $('#phone').val("");
-        $('#phone').focus();
-      } else {
-        // you can write whatever you want here once user hits send
-        // for now I just opened google.com
-        window.open('http://www.google.com');
-      }
-    }
+          if (!pattern.test(userinput)) {
+            alert('Please enter a valid e-mail address!');
+            $([document.documentElement, document.body]).animate({
+              scrollTop: $("#email").offset().top - 200
+            }, 200);
+            $('#email').val("");
+            $('#email').focus();
+          } else if (!phonePattern.test(phoneUserinput)) {
+            alert('Please enter a valid phone number!');
+            $([document.documentElement, document.body]).animate({
+              scrollTop: $("#phone").offset().top - 200
+            }, 200);
+            $('#phone').val("");
+            $('#phone').focus();
+          } else {
+            // you can write whatever you want here once user hits send
+            // for now I just opened google.com
+            window.open('http://www.google.com');
+          }
+        }
 
-    function reset() {
-      $('input').val("");
-      $('#message').val("");
-      $([document.documentElement, document.body]).animate({
-        scrollTop: $("#name").offset().top - 200
-      }, 200);
-      $('#name').focus();
-    }
-  </script>
+        function reset() {
+          $('input').val("");
+          $('#message').val("");
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $("#name").offset().top - 200
+          }, 200);
+          $('#name').focus();
+        }
+      </script>
 </body>
 
 </html>

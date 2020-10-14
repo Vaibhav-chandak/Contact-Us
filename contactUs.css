@@ -20,7 +20,7 @@ body {
 }
 
 .basic-slide {
-    width: 500px;
+    width: 50rem;
     padding: 10px 0 10px 15px;
     font-weight: 400;
     color: #377d6a;
@@ -94,17 +94,6 @@ body {
     100% {
         transform: rotate(0)
     }
-}
-
-.containerContact {
-    padding: 3% 3%;
-    font-size: 13px;
-    margin: 2% 4%;
-    border-radius: 2rem;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 1);
-    width: auto;
-    text-align: right;
-    transition: .5s ease;
 }
 
 .contactUsHeading {
@@ -196,4 +185,90 @@ a {
 
 .info {
     display: flex
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop phones: */
+    .containerContact {
+        padding: 3% 3%;
+        font-size: 13px;
+        margin: 2% 4%;
+        border-radius: 2rem;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 1);
+        width: auto;
+        text-align: right;
+        transition: .5s ease;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width: 768px) {
+    /* For tablets */
+    .rowContact {
+        margin: auto !important;
+    }
+    .contactUsHeading {
+        padding: 3%;
+    }
+    .leftDiv {
+        margin-bottom: 10%;
+    }
+    .buttons {
+        width: 100%;
+        text-align: center;
+    }
+    .button {
+        margin: 2% 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .containerContact {
+        padding: 3% 3%;
+        font-size: 13px;
+        margin: 2% 4%;
+        border-radius: 0;
+    }
+    .contactUsHeading {
+        font-weight: bolder;
+        font-size: 4rem;
+    }
+    .basic-slide {
+        width: 30rem;
+        padding: 10px 0 10px 30px;
+        text-indent: 20%;
+        margin-left: 10%;
+    }
+    .basic-slide+label {
+        margin-left: 10%;
+    }
+    .leftDiv {
+        margin-bottom: 10%;
+    }
+    .buttons {
+        width: 100%;
+        text-align: center;
+    }
+    .button {
+        margin: 2% 7%;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 560px) {
+    .basic-slide {
+        width: 45rem;
+        text-indent: 15%;
+        margin-left: 8%;
+    }
+    .basic-slide+label {
+        margin-left: 8%;
+    }
+    .buttons {
+        width: 100%;
+        text-align: center;
+    }
+    .resetButton {
+        margin-left: auto;
+        margin-right: 0;
+    }
 }
