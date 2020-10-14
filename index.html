@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <script src="https://kit.fontawesome.com/867a2c068e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="contactUs.css">
   <title>Astorian'z</title>
 </head>
 
@@ -105,16 +106,22 @@
               <div class="dropdown">
                 <ul>
                   <li class="dropdown-link">
-                    <a href="category.html#five">Smart TV's</a>
+                    <a href="category.html#smartTv">LED Smart TV</a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">TV's</a>
+                    <a href="category.html#ledTv">LED TV</a>
+                  </li>
+                  <li class="dropdown-link" style="text-align: left;">
+                    <a href="category.html#mobileAccessories">Mobile Accessories</a>
+                  </li>
+                  <li class="dropdown-link" style="text-align: left;">
+                    <a href="category.html#bluetoothDevices">Bluethooth Devices</a>
+                  </li>
+                  <li class="dropdown-link" style="text-align: left;">
+                    <a href="category.html#washingMachine">Washing Machines</a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">USB</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#">WiFi</a>
+                    <a href="category.html#geyser">Geyser</a>
                   </li>
                 </ul>
               </div>
@@ -139,6 +146,64 @@
       </div>
     </div>
   </header>
+
+  <div style="padding-top: 200px;"></div>
+  <div class="containerContact">
+    <div class="row">
+      <div class="col-lg-5 leftDiv">
+        <h1 class="contactUsHeading">You can contact us on</h1>
+        <div class="info">
+          <i class="fas fa-map-marker-alt fa-2x" class="contactIcon"></i>
+          <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua</p> <br>
+        </div>
+
+        <br>
+        <i class="fas fa-phone-volume fa-2x" class="contactIcon"></i>
+        <p class="contact">+1-543-123-4567</p> <br>
+
+        <br>
+        <i class="fas fa-envelope-open fa-2x" class="contactIcon"></i>
+        <p class="contact">example@Astorianz.com</p> <br>
+      </div>
+
+
+      <div class="col-lg-7 row rowContact">
+        <h1 class="contactUsHeading">Contact us using this form</h1>
+        <span>
+          <input class="basic-slide" value="" id="name" type="text" placeholder="Your best name" />
+          <label for="name">Name</label>
+        </span>
+
+        <span>
+          <input class="basic-slide" id="email" type="email" placeholder="Your favorite email" />
+          <label for="email">Email</label>
+        </span>
+
+        <span>
+          <input class="basic-slide" id="phone" type="text" placeholder="Your favorite number" />
+          <label for="phone">Phone</label>
+        </span>
+
+        <span>
+          <textarea class="basic-slide" id="message" placeholder="You precious message" rows="10" cols="10"></textarea>
+          <label for="message">Message</label>
+        </span>
+
+        <div class="button" id="button-7" onclick="validate()">
+          <div id="dub-arrow"> <i class="fab fa-telegram fa-3x"></i></div>
+          <a href="#">Send</a>
+        </div>
+
+        <div class="button" id="button-7" onclick="reset()">
+          <div id="dub-arrow"> <i class="fas fa-sync-alt fa-2x"></i></div>
+          <a href="#">Reset</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 
 
   <footer>
@@ -213,6 +278,45 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js'></script>
   <script type="text/javascript" src="./landing.js"></script>
+
+  <!-- Email and phone number validation -->
+  <script type="text/javascript">
+    function validate() {
+      var userinput = $('#email').val();
+      var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+      var phoneUserinput = $('#phone').val();
+      var phonePattern = /^[\+]?[0-9]{10,14}$/;
+
+      if (!pattern.test(userinput)) {
+        alert('Please enter a valid e-mail address!');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#email").offset().top - 200
+        }, 200);
+        $('#email').val("");
+        $('#email').focus();
+      } else if (!phonePattern.test(phoneUserinput)) {
+        alert('Please enter a valid phone number!');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#phone").offset().top - 200
+        }, 200);
+        $('#phone').val("");
+        $('#phone').focus();
+      } else {
+        // you can write whatever you want here once user hits send
+        // for now I just opened google.com
+        window.open('http://www.google.com');
+      }
+    }
+
+    function reset() {
+      $('input').val("");
+      $('#message').val("");
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#name").offset().top - 200
+      }, 200);
+      $('#name').focus();
+    }
+  </script>
 </body>
 
 </html>
