@@ -234,7 +234,7 @@ a {
         font-size: 4rem;
     }
     .basic-slide {
-        width: 30rem;
+        width: 28rem;
         padding: 10px 0 10px 30px;
         text-indent: 20%;
         margin-left: 10%;
@@ -251,6 +251,9 @@ a {
     }
     .button {
         margin: 2% 7%;
+    }
+    .contact {
+        font-size: 15px;
     }
 }
 
@@ -270,5 +273,16 @@ a {
     .resetButton {
         margin-left: auto;
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .basic-slide {
+        width: 25rem;
+        text-indent: 15%;
+        margin-left: 12%;
+    }
+    .basic-slide+label {
+        margin-left: 12%;
     }
 }
