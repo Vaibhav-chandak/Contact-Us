@@ -187,8 +187,17 @@ a {
     display: flex
 }
 
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    margin: 7%;
+}
+
 @media only screen and (min-width: 992px) {
-    /* For desktop phones: */
+    /* For desktop: */
     .containerContact {
         padding: 3% 3%;
         font-size: 13px;
